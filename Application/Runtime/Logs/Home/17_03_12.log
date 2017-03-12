@@ -1,0 +1,173 @@
+[ 2017-03-12T17:03:05+08:00 ] ::1 /majinming/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007252s ]
+NOTIC: [8] Undefined index: name G:\xampp\htdocs\majinming\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `mjm_user` [ RunTime:0.0282s ]
+SQL: SELECT * FROM `mjm_user` ORDER BY grade desc LIMIT 3   [ RunTime:0.0266s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.026748s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.026847s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103993s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.017645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017730s ]
+
+[ 2017-03-12T17:03:08+08:00 ] ::1 /majinming/index.php/Index/index2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+NOTIC: [8] Undefined index: name G:\xampp\htdocs\majinming\Application\Home\Controller\IndexController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `mjm_user` [ RunTime:0.0510s ]
+SQL: SELECT * FROM `mjm_user` ORDER BY grade desc LIMIT 3   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mjm_lunwen` [ RunTime:0.0514s ]
+SQL: SELECT * FROM `mjm_lunwen` ORDER BY cishu desc LIMIT 3   [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mjm_user` WHERE `uid` = '20' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mjm_user` WHERE `uid` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `mjm_user` WHERE `uid` = '20' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001007s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001177s ]
+
+[ 2017-03-12T17:03:08+08:00 ] ::1 /majinming/index.php/Index/assets/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+ERR: 非法操作:assets
+
+[ 2017-03-12T17:03:08+08:00 ] ::1 /majinming/index.php/Index/assets/js/jquery.dropotron.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001180s ]
+ERR: 非法操作:assets
+
+[ 2017-03-12T17:03:08+08:00 ] ::1 /majinming/index.php/Index/assets/js/jquery.scrollgress.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010491s ]
+ERR: 非法操作:assets
+
+[ 2017-03-12T17:03:08+08:00 ] ::1 /majinming/index.php/Index/assets/js/skel.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005803s ]
+ERR: 非法操作:assets
+
+[ 2017-03-12T17:03:08+08:00 ] ::1 /majinming/index.php/Index/assets/js/util.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000903s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+ERR: 非法操作:assets
+
+[ 2017-03-12T17:03:08+08:00 ] ::1 /majinming/index.php/Index/assets/js/main.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+ERR: 非法操作:assets
+
+[ 2017-03-12T17:03:08+08:00 ] ::1 /majinming/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+NOTIC: [8] Undefined index: name G:\xampp\htdocs\majinming\Application\Home\Controller\IndexController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `mjm_user` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `mjm_user` ORDER BY grade desc LIMIT 3   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007448s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001141s ]
+
+[ 2017-03-12T17:03:08+08:00 ] ::1 /majinming/index.php/Index/assets/js/jquery.dropotron.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+ERR: 非法操作:assets
+
+[ 2017-03-12T17:03:08+08:00 ] ::1 /majinming/index.php/Index/assets/js/jquery.scrollgress.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+ERR: 非法操作:assets
+
+[ 2017-03-12T17:03:08+08:00 ] ::1 /majinming/index.php/Index/assets/js/skel.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+ERR: 非法操作:assets
+
+[ 2017-03-12T17:03:08+08:00 ] ::1 /majinming/index.php/Index/assets/js/util.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+ERR: 非法操作:assets
+
+[ 2017-03-12T17:03:08+08:00 ] ::1 /majinming/index.php/Index/assets/js/main.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+ERR: 非法操作:assets
+

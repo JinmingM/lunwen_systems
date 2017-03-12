@@ -1,0 +1,56 @@
+Project Due: Week Three Monday 9:00AM
+Project scope: Complete Life Cycle and PPT Presentation in Class Room.
+=======================================================
+Steps:
+1) Make individual file - such as ST_NO_SPECIFICATION_INCEPTION.DOC, ST_NO_SPECIFICATION_ELICITATION.DOC, ST_NO_SPECIFICATION_ELOBORATION.DOC
+2) Then zip one group   ST_NO_SPECIFICATION.ZIP
+3) Like repeat for all phases 
+4) Finally zip all group ST_NO_PROJECT.ZIP
+5) And copy to TA 
+6) If your project presentation is not done, your document will not be accepted.
+7) So first make presentation and sumbit the project package
+===========================================================================
+TOTAL SCORE: 100 POINTS
+TEAM SIZE: 1, COMPULSORY FOR ALL STUDENTS
+============================================
+Specification Phase:20 points
+Design Phase: 20 Points
+Detail Design/Code phase: 20 Points
+Testing Phase: 20 Points
+Documentation Phase: 20 Points
+
+Specification Phase: 5x4=20 Points, Content requirement (Blue Print, and Specification Document)
+1) Inception - Title, Scope, Descritpion, Definitions, Acronyms, Abbrivations, Reference , Business Model Diagram, Stake Holders, Platform
+2) Elicitation - Primary Actors, Entity Actors, Function List, Non Function List, Use Case Diagram, Class Diagram, Sequence Diagram
+3) Eloboration - Risk Analysis, Activity Diagram, Compnent Diagram, Deployment Diagram, Package diagram
+4) Negotiation - Quantitative analysis of Components, Risk, time, cost, resources, Gant Chart, Project Plan for parllel, dependency, priority.
+5) Validation  - Test plan, input screen, output screen, input data for validation, user interface screen.
+
+Design Phase:5x4=20
+1) Detailed Use Case Diagram with constraints
+2) Detailed Class Diagram with constraints
+3) Detailed Sequence Diagram with constraints
+4) Detailed Activity Diagram with constraints
+5) Detailed Component, Package and Deployment diagram with constraints
+
+Detail/Design/Code Phase:5x4=20
+1) Sub Systems and Testing System application Layer UI
+2) Middle Layer Application Code
+3) General Compnents level code
+4) Entity Components code
+5) Assets Data Files, Image files, resources files
+
+Testing Phase: 5x4=20
+1) Actor Interacting User Interface Design Screen
+2) Input data and response screen
+3) Data Processing and report screen
+4) Options and runtime configuation screen
+5) Other back end services such as options, help, customizable
+
+Documentation Phase: 5x4=20
+1) User Manual
+2) Source Code
+3) Trouble Shoot Guide
+4) PPT for presentation
+5) Specification, Design, Testing Documents
+=====================================================

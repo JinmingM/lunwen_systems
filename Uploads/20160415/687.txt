@@ -1,0 +1,147 @@
+using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace 实验2
+{
+    /// <summary>
+    /// MainWindow.xaml 的交互逻辑
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public class ToDo
+        {
+            public string Title { get; set; }
+            public string DueDate { get; set; }
+            public string Dsicription { get; set; }
+        }
+
+        public MainWindow()
+        {
+            
+            InitializeComponent();
+
+        }
+   
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            listView1.Items.Remove(listView1.SelectedItems[0]);
+            textBox_Title.Text = "";
+            textBox_Date.Text = "";
+            textBox_Discription.Text = "";
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            string a = textBox_Title.Text;
+            string b = textBox_Date.Text;
+            string c = textBox_Discription.Text;
+            listView1.Items.Add(new ToDo { Title = a, DueDate = b, Dsicription=c });
+            textBox_Title.Text = "";
+            textBox_Date.Text = "";
+            textBox_Discription.Text = "";
+        }
+
+        private void listView1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ToDo d = listView1.SelectedItem as ToDo;
+            if (d != null)
+            {
+                textBox_Title.Text = d.Title;
+                textBox_Date.Text = d.DueDate;
+                textBox_Discription.Text = d.Dsicription;
+            }
+
+        }
+    }
+}
+
+
+<Window x:Class="实验2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:实验2"
+        mc:Ignorable="d"
+        Title="ToDoList" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto" MinHeight="110"/>
+            <RowDefinition Height="22"/>
+        </Grid.RowDefinitions>
+
+
+        <ListView x:Name="listView1" MinWidth="280" SelectionChanged="listView1_SelectionChanged">
+            <ListView.View>
+                <GridView x:Name="gridView1">
+                    <GridViewColumn Header="Title" 
+                                    Width="400"
+                                    DisplayMemberBinding="{Binding Path=Title}">
+
+                    </GridViewColumn>
+
+                    <GridViewColumn Header="Due Date" 
+                                    Width="100"
+                                    DisplayMemberBinding="{Binding Path=DueDate}">
+                        
+                    </GridViewColumn>
+
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <WrapPanel Grid.Row="1" Orientation="Horizontal" >
+
+            <StackPanel Orientation="Horizontal" Margin="5,2,5,2">
+
+                <TextBlock Name="textBlock_Title" Text="Title:" />
+
+                <TextBox Name="textBox_Title" MinWidth="200" />
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="5,2,5,2">
+
+                <TextBlock x:Name="textBlock_DueDate" Text="Due Date:" />
+                <DatePicker x:Name="textBox_Date" Width="200"/>
+            </StackPanel>
+
+
+        </WrapPanel>
+        <StackPanel Grid.Row="1"  Margin="5,30,5,2" >
+
+            <TextBlock x:Name="textBlock_Discription" Text="Discription:" />
+
+            <TextBox x:Name="textBox_Discription" MinWidth="50" Height="60" />
+
+        </StackPanel>
+        
+        <Button Grid.Row="2" Margin="300,0,55,0" 
+                Click="button1_Click" 
+                Name="button1" 
+                Width="80">DELETE
+        </Button>
+        <Button Grid.Row="2" 
+                HorizontalAlignment="Right" 
+                Click="button2_Click" 
+                Name="button2" 
+                Width="80">NEW
+        </Button>
+
+    </Grid>
+</Window>
+

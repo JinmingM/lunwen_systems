@@ -1,0 +1,75 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>管理员中心-用户</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/houtai/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/houtai/css/main.css"/>
+    <script type="text/javascript" src="___PUBLIC__/houtai/js/libs/modernizr.min.js"></script>
+    <div style='float:left' ><strong>欢迎你：{$username}</strong></a></div>
+</head>
+<body>
+<div class="topbar-wrap white">
+    <!--<div class="topbar-inner clearfix">-->
+    <div class="topbar-logo-wrap clearfix">
+        <h1 class="topbar-logo none"><a href="index.html" class="navbar-brand">管理员中心</a></h1>
+    </div>
+</div>
+</div>
+<div class="container clearfix">
+    <div class="sidebar-wrap">
+        <div class="sidebar-content">
+            <ul class="sidebar-list">
+                <li>
+                    <a href="{:U('./majiming/Application/home/View/Index/index2')}"><i class="icon-font">&#xe008;</i>首页</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-content">
+            <ul class="sidebar-list">
+                <li>
+                    <a href="/majinming/index.php/Index/index2"><i class="icon-font">&#xe008;</i>首页</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-title">
+            <h1>菜单</h1>
+        </div>
+        <div class="sidebar-content">
+            <ul class="sidebar-list">
+                <li>
+                    <a href="#"><i class="icon-font">&#xe008;</i>常用操作</a>
+                    <ul class="sub-menu">
+                        <li><a href="__MODULE__/Index/User"><i class="icon-font">&#xe003;</i>人员管理</a></li>
+                        <li><a href="__MODULE__/Index/Lunwen"><i class="icon-font">&#xe005;</i>论文管理</a></li>
+                        <li><a href="__MODULE__/Index/Pinglun"><i class="icon-font">&#xe006;</i>评论管理</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="index.html" color="#white">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">修改密码</span></div>
+        </div>
+        <br>
+        <form action="__MODULE__/Index/changeuspw1?id={$uid}" method="post">
+            <div class="form-group has-feedback"style="margin-left:100px;width:300px">
+                <input type="password" name="nupsw" class="form-control" placeholder="新密码" />
+                <span class="glyphicon glyphicon-credit-card form-control-feedback"></span>
+            </div>
+            <div class="row"style="margin-left:300px;width:500px">
+                <div class="col-xs-4">
+                    <button type="submit" class="btn btn-primary btn-block btn-flat">点击修改</button>
+                </div><!-- /.col -->
+            </div>
+        </form>
+
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

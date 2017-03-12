@@ -1,0 +1,82 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>登录</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <div class="btn-group" role="group" aria-label="..." style="margin-left:1230px" navbar-static-top >
+        <?php if(empty($username)): ?><button type="button" class="btn btn-default"><a href="/majinming/index.php/User/login"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><strong>登录</strong> </button>
+        <button type="button" class="btn btn-default" ><a href="/majinming/index.php/User/regisiter"><strong>注册</strong> </button>
+            <?php else: ?>
+            <div style='float:left' ><strong>欢迎你：<?php echo ($username); ?>||<a href='/majinming/index.php/User/logout'>退出</strong></a></div><?php endif; ?>
+    </div>
+    <br><br>
+    <ul class="nav nav-pills nav-justified navbar-static-top">
+        <li role="presentation" class=""><a href="/majinming/index.php/Index/index2"><strong>首页</strong></a></li>
+        <li role="presentation" class="active"><a href="/majinming/index.php/Lunwen/uploadLunwen"><strong>共享论文上传</strong></a></li>
+        <li role="presentation" class="active"><a href="/majinming/index.php/Lunwen/download"><strong>共享论文下载</strong></a></li>
+
+        <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <strong> 用户中心</strong> <span class="caret"></span>
+            </a>
+        </li>
+    </ul>
+
+</head>
+<body>
+<br>
+<br>
+<br>
+<form action="/majinming/index.php/User/login1" method="post">
+    <div class="form-group has-feedback" style="margin-left:100px;width:300px">
+        <input type="text" name="uname" class="form-control" placeholder="用户名" />
+        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+    </div>
+    <div class="form-group has-feedback"style="margin-left:100px;width:300px">
+        <input type="password" name="upsw" class="form-control" placeholder="密码" />
+        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+    </div>
+    </div>
+    <div class="form-group has-feedback"style="margin-left:100px;width:300px">
+        <input type="text" name="verify" class="form-control" placeholder="验证码" style="width:200px;" />
+        <span class="glyphicon glyphicon-qrcode form-control-feedback" style="right:120px;"></span>
+        <img class="verify" src="<?php echo U(verify);?>" alt="验证码" onClick="this.src=this.src+'?'+Math.random()" />
+    </div>
+    <div class="row">
+        <div class="col-xs-8">
+            <div class="checkbox icheck"style="margin-left:100px">
+                <label>
+                    <input type="checkbox" name="remember" value="1"> 记住我
+                </label>
+            </div>
+        </div><!-- /.col -->
+        <div class="col-xs-4" style="margin-left:200px;width:300px">
+            <button type="submit" class="btn btn-primary btn-block btn-flat">登录</button>
+        </div><!-- /.col -->
+    </div>
+</form>
+
+</body>
+<footer id="footer"style="margin-left:550px;">
+    <ul class="copyright">
+        <li>&copy; Sharer：MJM249455501@qq.com</a></li>
+    </ul>
+</footer>
+</html>
